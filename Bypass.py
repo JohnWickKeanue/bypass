@@ -25,7 +25,7 @@ SUPPORTED DOMAINS:
 def bypass(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
     if 'rocklinks.net' in url:
-        DOMAIN = "https://blog.disheye.com"
+        DOMAIN = "https://rl.techysuccess.com"
     elif 'gtlinks.me' in url:
         DOMAIN = "https://go.kinemaster.cc"
     elif 'shortingly.me' in url:
