@@ -1,9 +1,14 @@
+#@title <b><center>Enter Rocklink/gtlink/shortingly Link Below</center></b>
+print("Downloading Cloud-Scraper...")
+!pip install cloudscraper
+print("Setting Up!")
+print("Performing Check...")
 import time
 import cloudscraper
 from bs4 import BeautifulSoup 
 print("Everything Looks Good! Lets Continue.")
 
-url = ""  #@param {type:"string"}
+url = "https://shortingly.me/qaXpNHm"  #@param {type:"string"}
 
 
 '''
@@ -12,8 +17,8 @@ SUPPORTED DOMAINS:
  - rocklinks.net
  - gtlinks.me
  - shortingly.me
-
-
+ 
+ 
 '''
 # ---------------------------------------------------------------------------------------------------------------------
 
@@ -22,9 +27,9 @@ def bypass(url):
     if 'rocklinks.net' in url:
         DOMAIN = "https://blog.disheye.com"
     elif 'gtlinks.me' in url:
-        DOMAIN = "https://go.gyanitheme.com"
+        DOMAIN = "https://go.kinemaster.cc"
     elif 'shortingly.me' in url:
-        DOMAIN = "https://go.techyjeeshan.xyz"
+        DOMAIN = "https://go.gyanitheme.com"
     else:
         DOMAIN = "https://rocklinks.net"
 
@@ -32,7 +37,7 @@ def bypass(url):
 
     code = url.split("/")[-1]
     if 'rocklinks.net' in url:
-        final_url = f"{DOMAIN}/{code}?quelle="
+        final_url = f"{DOMAIN}/{code}?quelle=" 
     else:
         final_url = f"{DOMAIN}/{code}"
 
